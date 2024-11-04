@@ -43,7 +43,7 @@ def next_bus_arrival(stop_id: int, line: str, platform: str) -> Optional[int]:
 app = Flask(__name__)
 
 
-@app.get("/api/next_bus")
+@app.get("/")
 def next_bus() -> str:
     time = next_bus_arrival(9021014014111000, "Buss X4", "B")
     if time is None:
